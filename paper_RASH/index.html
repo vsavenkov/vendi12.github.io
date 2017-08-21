@@ -30,36 +30,29 @@ Under the following terms:
         <script src="js/jquery.min.js"> </script>
         <script src="js/bootstrap.min.js"> </script>
         <script src="js/rash.js"> </script>
-        
-        <!-- MathJax for multi-browser support of LaTeX formulas and MathML -->
-        <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_HTMLorMML"> </script>
-        <!-- /END Visualisation requirements (mandatory for optimal reading) -->
-        
+                
         <!-- Metadata -->
         <title property="dcterms:title">TableQA: Question Answering on Tabular Data</title>
         
         <!-- Author's data (one or more) -->
         <meta about="#author-1" name="dc.creator" content="Svitlana Vakulenko"/>
         <meta about="#author-1" property="schema:email" content="svitlana.vakulenko@wu.ac.at"/>
-        <link about="#author-1" property="schema:affiliation" href="#organization-1"/>
+        <link about="#author-1" property="schema:affiliation" href="#wu"/>
         
         <meta about="#author-2" name="dc.creator" content="Vadim Savenkov"/>
         <meta about="#author-2" property="schema:email" content="vadim.savenkov@wu.ac.at"/>
-        <link about="#author-2" property="schema:affiliation" href="#organization-1"/>
-        <link about="#author-2" property="schema:affiliation" href="#organization-2"/>
+        <link about="#author-2" property="schema:affiliation" href="#wu/>
         
         <!-- Affiliations -->
-        <meta about="#organization-1" property="schema:name" content="My own company, UK"/>
-        <meta about="#organization-2" property="schema:name" content="Your own company, USA"/>
+        <meta about="#wu" property="schema:name" content="Vienna University of Economics and Business"/>
         
         <!-- Paper keywords (one or more) -->
-        <!-- <meta property="prism:keyword" content="keyword 1"/>
-        <meta property="prism:keyword" content="keyword 2"/>
-        <meta property="prism:keyword" content="keyword 3"/> -->
+        <!-- <meta property="prism:keyword" content="Question answering"/>
+        <meta property="prism:keyword" content="Semantics of tabular data"/>
+        <meta property="prism:keyword" content="Machine learning"/> -->
         
         <!-- ACM category (one or more) -->
-        <!-- <meta name="dcterms.subject" content="Applied computing,Document management and text processing,Document preparation,Markup languages"/>
-        <meta name="dcterms.subject" content="Applied computing,Document management and text processing,Document preparation,Annotation"/> -->
+        <meta name="dcterms.subject" content="Information retreival,Retreival tasks and goals,Question answering"/> 
         <!-- /END Metadata -->
     </head>
     <body>
@@ -99,7 +92,7 @@ Under the following terms:
 
             <figure id="figure_arch">
                     <p>
-                        <img src="./img/archTableQA.pdf" />
+                        <img src="img/archTableQA.png" />
                     </p>
                     <figcaption>System architecture. T - input table; Q - question; A - answer.</figcaption>
                 </figure>
@@ -167,7 +160,7 @@ Under the following terms:
                 <figure id="figure_ui">
                     <a href="https://svakulenko.ai.wu.ac.at/tableqa">
                         <p>
-                            <img src="./img/screen3.png" />
+                            <img src="img/screen3.png" />
                         </p>
                     </a>
                     <figcaption>Demonstration of the neural network model trained towards question answering from tables. The highlighted cells and their intensity indicate the attention weights over the input table that were activated to predict the answer to the input question.</figcaption>
